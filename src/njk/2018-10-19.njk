@@ -1,0 +1,13 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[1] %}
+
+{% block page_title %}{{entry.title}}{% endblock %}
+
+{% block description %}Blog entry for {{entry.date}}, {{entry.title}}{% endblock %}
+
+{% block story %}
+ <h1> The Buried Treasure </h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Etiam nec ullamcorper leo. Cras elit augue, pulvinar eu dictum vitae, bibendum malesuada velit. Ut blandit et felis at rutrum. Phasellus porttitor orci tristique, consectetur ante ac, gravida turpis. Phasellus aliquet ante lorem, eu volutpat odio tempus vitae. Ut sit amet vestibulum sem. Nam at nisi sit amet neque pulvinar egestas. Integer tincidunt dolor eget velit semper cursus. Proin cursus pellentesque eros, et pellentesque sem suscipit vel.</p>
+{% endblock %}

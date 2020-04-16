@@ -1,0 +1,13 @@
+{% extends '_layouts/detail-entry.njk' %}
+
+{% set entry = data.entries[2] %}
+
+{% block page_title %}{{entry.title}}{% endblock %}
+
+{% block description %}Blog entry description.{% endblock %}
+
+{% block story %}
+ <h1> The Broken Hull and Empty Cabin </h1>
+  <h5>Captain's log: {{ entry.date }}</h5>
+  <p>Suspendisse a nisi a leo ultrices tincidunt. Donec non tristique sem. Nulla ultrices ex at massa laoreet bibendum et ac libero. Nulla mattis, sem eu porttitor venenatis, felis augue varius elit, ut semper felis libero eget justo. Fusce sodales rhoncus vehicula. Ut vitae pulvinar sapien, eget egestas lacus. Phasellus viverra semper quam ac interdum. Maecenas aliquam lacinia purus, sed finibus orci blandit eget. Nam sapien elit, maximus in porttitor vitae, sodales et nunc.</p>
+{% endblock %}
